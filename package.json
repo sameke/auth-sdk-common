@@ -1,0 +1,30 @@
+{
+    "name": "@sameke/auth-sdk-common",
+    "version": "1.0.1",
+    "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --project tsconfig.json",
+        "prepare": "npm run build && npm version patch",
+        "postpublish": "git push",
+        "auth": "vsts-npm-auth -config .npmrc",
+        "git": "git add . && git commit -m \"published\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sameke/auth-sdk-common.git"
+    },
+    "author": "Sameke Inc.",
+    "license": "SEE LICENSE IN LICENSE",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "4.14.1",
+        "@typescript-eslint/parser": "4.14.1",
+        "eslint": "7.18.0",
+        "eslint-config-standard": "16.0.2",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "4.2.1",
+        "typescript": "4.1.3"
+    }
+}
