@@ -1,12 +1,12 @@
 {
     "name": "@sameke/auth-sdk-common",
-    "version": "1.0.1",
+    "version": "0.0.0",
     "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc --project tsconfig.json",
-        "prepare": "npm run build && npm version patch",
+        "prepare": "npm run build && npm run git && npm version patch",
         "postpublish": "git push",
         "auth": "vsts-npm-auth -config .npmrc",
         "git": "git add . && git commit -m \"published\""
