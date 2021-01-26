@@ -7,6 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc --project tsconfig.json",
         "prepare": "npm run build && npm run git && npm version patch",
+        "publish": "npm publish --access public",
         "postpublish": "git push",
         "auth": "vsts-npm-auth -config .npmrc",
         "git": "git add . && git commit -m \"published\""
